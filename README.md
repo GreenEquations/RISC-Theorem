@@ -1,109 +1,82 @@
-Recursive Information Saturation Collapse Theorem (RISC)
-Overview
-The Recursive Information Saturation Collapse Theorem (RISC) proposes that any recursive symbolic processing system—whether artificial (e.g., neural-symbolic systems, deep learning models) or biological (e.g., human cognition)—will experience collapse when the interplay between recursive feedback and entropy imbalance exceeds a critical threshold. This collapse manifests as a degradation in coherence, symbolized by phenomena such as logical contradictions, semantic drift, or hallucinations.
+# 🔄 Recursive Information Saturation Collapse (RISC) Theorem
 
-This repository contains the theorem's formalization, supporting scientific argumentation, testable predictions, and simulation design proposal. It is intended for researchers, practitioners, and anyone interested in understanding how recursive symbolic systems can fail under certain conditions.
+## Overview
 
-Theorem Statement
-Core Idea
-The theorem states that recursive symbolic systems experience collapse due to the combination of entropy imbalance and recursion density. This collapse occurs when these two factors exceed certain thresholds, resulting in degraded system performance, including issues like semantic drift and logical paradoxes.
+This repository presents the **RISC Theorem**, which formalizes a collapse condition in symbolic systems that encounter excessive internal information density and recursive feedback. When a system exceeds its entropy handling capacity or its allowable recursion depth, it enters a state of semantic breakdown. RISC is applicable to both artificial intelligence and human cognition, particularly in contexts involving recursive logic, language generation, or symbolic overload.
 
-Mathematical Formulation
-𝑑
-2
-Φ
-(
-𝑡
-)
-𝑑
-𝑡
-2
-=
-−
-(
-𝛼
-⋅
-𝐻
-(
-𝑡
-)
-+
-𝛽
-⋅
-𝐷
-𝑟
-(
-𝑡
-)
-)
-dt 
-2
- 
-d 
-2
- Φ(t)
-​
- =−(α⋅H(t)+β⋅D 
-r
-​
- (t))
-Where:
+---
 
-H(t) = entropy imbalance (difference between incoming entropy and dissipated entropy),
+## 🔢 Key Terms
 
-D_r(t) = recursion density (measures the depth of recursive symbolic references),
+- **Φ(t)** – A coherence function measuring output consistency at time t
+- **H(t)** – Entropy imbalance, defined as the difference between incoming and dissipated symbolic entropy
+- **Dr(t)** – Recursion density: the rate of internal symbolic referencing over time
+- **Θ** – Critical entropy threshold
+- **θc** – Recursion threshold
+- **Collapse Condition** – When either H(t) > Θ or Dr(t) > θc, coherence degrades rapidly and Φ(t) accelerates downward
 
-Φ(t) = coherence function (tracks the system's ability to maintain symbolic integrity),
+---
 
-α and β = constants that modulate the impacts of entropy imbalance and recursion density on coherence,
+## 📉 Collapse Indicators
 
-Θ = entropy threshold,
+- Decrease in Φ(t) and acceleration in d²Φ/dt²
+- Mutual information between system outputs drops toward zero
+- Entropy spikes (e.g., Shannon or cross-entropy)
+- Self-referential loops begin to contradict or overwrite original semantics
+- Redundancy or hallucination increases in output
 
-θ_c = recursion density threshold.
+---
 
-Collapse Condition
-The system undergoes collapse when either entropy imbalance exceeds Θ or recursion density surpasses θ_c, leading to nonlinear degradation in coherence.
+## 🧪 Simulation Framework
 
-Theory and Background
-The RISC theorem builds upon multiple theories:
+### Applicable Systems
+- Autoregressive language models (e.g., GPT, LLaMA)
+- Symbolic logic systems with feedback recursion
+- Cognitive simulation environments under symbolic saturation
 
-Thermodynamics of Computation (inspired by Landauer’s Principle),
+### Measurement Tools
+- BERTScore or BLEU for semantic coherence
+- Mutual Information estimation (MINE, CLUB)
+- Entropy tracking over recursive cycles
+- Embedding drift (cosine similarity)
 
-Information Theory (entropy imbalance),
+---
 
-Recursive Systems Theory (recursive feedback loops),
+## 🧠 Human Cognition Parallel
 
-Cognitive Science and AI (recursive paradoxes and information overload).
+- Breakdown in recursive reasoning under overload
+- Thought spirals and paradox loops in symbolic reasoning tasks
+- Cognitive collapse under excessive information input without resolution
 
-Testable Predictions
-In AI Systems (e.g., Transformers, Neural-Symbolic Models): Increased recursion density will degrade the system's semantic coherence.
+---
 
-In Human Cognition: Exposure to recursive paradoxes (e.g., liar paradox, Curry’s paradox) leads to cognitive overload.
+## 🛠 Applications
 
-In Neural Networks (e.g., Spiking Neural Networks): Increased entropy or recursive inputs will result in collapse in output coherence.
+- **AI Safety** – Early detection of entropy or recursion-based failure
+- **System Architecture** – Design constraints for symbolic recursion depth
+- **Knowledge Graphs** – Prevention of symbolic saturation in inference chains
+- **Cognitive Science** – Modeling working memory and symbolic overload
 
-Simulation Design
-The theory suggests testing the model with:
+---
 
-AI Testing: Use transformer models or neural-symbolic systems to apply recursive tasks and measure semantic coherence.
+## 📂 Repository Info
 
-Human Testing: Present paradox chains to human subjects under cognitive load and measure response time and semantic consistency.
+**Status**: Stable  
+**Version**: 1.0  
+**Tags**: Information Saturation, Recursion, Collapse Detection, Symbolic Systems  
+**License**: MIT
 
-How to Contribute
-We welcome contributions, whether you're improving the theorem's formulation, adding new test cases, or exploring real-world data to validate predictions.
+---
 
-Steps for Contributing:
-Fork this repository.
+## 🤝 How to Contribute
 
-Create a new branch for your changes (git checkout -b feature-name).
+- Propose enhanced entropy tracking tools
+- Provide simulations from AI or cognitive domains
+- Suggest extensions for multi-agent or graph-based symbolic systems
+- Submit a pull request or open an issue
 
-Make your changes and commit them (git commit -m "Describe your change").
+---
 
-Push your changes to your fork (git push origin feature-name).
+## 📜 License
 
-Create a pull request from your fork to this repository.
-
-Please follow the PSM (Peer-Supported Methodology) format for your contributions, and make sure all mathematical and empirical claims are well-supported by relevant data or models.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT License — free to use, modify, and redistribute with attribution.

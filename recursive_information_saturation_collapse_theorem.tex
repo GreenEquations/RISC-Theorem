@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, geometry}
+\geometry{margin=1in}
+\title{Recursive Information Saturation Collapse Theorem (RISC)}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{I. Theorem Statement}
+
+The RISC Theorem formalizes a collapse condition in symbolic systems that experience either entropy overload or recursive saturation. The model identifies two distinct failure modes: entropy accumulation and recursion density.
+
+Let:
+\begin{itemize}
+  \item $\Phi(t)$ – Coherence function at time $t$
+  \item $H(t)$ – Entropy imbalance (incoming entropy minus dissipated entropy)
+  \item $D_r(t)$ – Recursion density (recursive operations per time unit)
+  \item $\Theta$ – Entropy collapse threshold
+  \item $\theta_c$ – Recursion collapse threshold
+\end{itemize}
+
+Collapse occurs if:
+
+\[
+H(t) > \Theta \quad \text{or} \quad D_r(t) > \theta_c
+\]
+
+At this point:
+
+\[
+\frac{d^2 \Phi}{dt^2} > 0 \quad \text{and} \quad \Delta I(t) \rightarrow 0
+\]
+
+\section*{II. Collapse Mechanism}
+
+\begin{enumerate}
+  \item \textbf{Entropy Saturation:} Symbolic input exceeds system’s dissipation capacity.
+  \item \textbf{Recursive Overload:} Internal referencing increases symbolic load beyond structural limits.
+  \item \textbf{Feedback Amplification:} Attempts at stabilization raise recursion density and worsen collapse risk.
+\end{enumerate}
+
+\section*{III. Collapse Indicators}
+
+\begin{itemize}
+  \item Increasing $\frac{d^2 \Phi}{dt^2}$ (coherence loss acceleration)
+  \item Declining mutual information between recursive outputs
+  \item Entropy growth (Shannon or cross-entropy)
+  \item Repetition, contradiction, or nonsensical output
+\end{itemize}
+
+\section*{IV. Simulation Framework}
+
+\subsection*{Applicable Systems}
+
+\begin{itemize}
+  \item Autoregressive language models
+  \item Symbolic logic systems with recursive input
+  \item Cognitive agents under symbolic overload
+\end{itemize}
+
+\subsection*{Metrics}
+
+\begin{itemize}
+  \item BERTScore, BLEU, or coherence metrics
+  \item Mutual information via MINE or CLUB
+  \item Cosine similarity of embeddings
+  \item Entropy trends over recursion depth
+\end{itemize}
+
+\section*{V. Visualization}
+
+\begin{itemize}
+  \item Time-series plots of $\Phi(t)$, $H(t)$, and $D_r(t)$
+  \item Collapse prediction based on $\frac{d^2 \Phi}{dt^2}$ and $\Delta I(t)$
+  \item UMAP/t-SNE embedding trajectories over recursive steps
+\end{itemize}
+
+\section*{VI. Cognitive Analogy}
+
+\begin{itemize}
+  \item Symbolic overload in paradox resolution tasks
+  \item Working memory collapse from recursive reasoning
+  \item Contradiction loops in high-bandwidth symbolic cognition
+\end{itemize}
+
+\section*{VII. Applications}
+
+\begin{itemize}
+  \item AI safety through entropy-aware model architecture
+  \item Cognitive collapse modeling under symbolic recursion
+  \item Symbolic system design with recursive fail-safes
+  \item Early-warning metrics for system saturation
+\end{itemize}
+
+\section*{VIII. Future Work}
+
+\begin{itemize}
+  \item Model entropy input/output balance as a function of recursion
+  \item Implement dampening layers for recursion in AI architectures
+  \item Generalize RISC to multi-agent or graph-based systems
+\end{itemize}
+
+\end{document}
